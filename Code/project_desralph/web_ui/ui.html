@@ -1,0 +1,87 @@
+<!doctype html>
+<html id="ralph">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="/static/robocore.js"></script>
+    <script src="web_ui/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="web_ui/jquery.ui.touch-punch.js"></script>
+    <link rel="stylesheet" href="web_ui/ui.css">
+    <link rel="stylesheet" href="web_ui/jquery.mCustomScrollbar.css">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<body>
+
+<button type-active id="btn_calibrate">calibrate</button>
+<button type-active id="btn_motor_onoff">turn off motors</button>
+
+<div id="video-container" fitmode="cut"></div>
+    
+<div id="manipulator">
+    <div class="ring_inner">
+
+    </div>
+
+    <div class="ring">
+
+        <div class="center">
+
+        </div>
+
+    </div>
+
+    <div class="strokes">
+
+    </div>
+    
+    <button type-active id="btn_up">&nbsp;</button>
+    <button type-active id="btn_left">&nbsp;</button>
+    <button type-active id="btn_down">&nbsp;</button>
+    <button type-active id="btn_right">&nbsp;</button>
+
+    <button type-active id="btn_left_up">&nbsp;</button>
+    <button type-active id="btn_right_up">&nbsp;</button>
+    <button type-active id="btn_right_down">&nbsp;</button>
+    <button type-active id="btn_left_down">&nbsp;</button>
+</div>
+
+<div id="gearbox-wrapper">
+    <div id="gearbox">
+        <div id="gear_selector" class="stop">
+            <div class="inner_box">
+                <div class="inner_line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="battery-level-wrapper">
+    <div class="title">Battery: <label id="lb_bat">10V</label></div>
+    <div class="inner"></div>
+</div>
+
+<button id="info">
+
+</button>
+
+<div id="console_container">
+    <console id="cl1"></console>
+</div>
+
+<div id="publisher_controls">
+    <button id="btn_mute" class="icon btn_mute" title="mute">Mute</button>
+    <button id="btn_incognito" class="icon btn_incognito"title="Incognito mode">Incognito mode</button>
+</div>
+
+
+<div id="controls">
+    <button type-active id="g1">1</button>
+    <button type-active id="g2">2</button>
+    <button type-active id="g3">3</button>
+    <button type-active id="stop">4</button>
+</div>
+
+
+<script src="web_ui/ralph.js"></script>
+</body>
+</html>
